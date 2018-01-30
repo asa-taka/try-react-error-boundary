@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^1.1.0",
     "lint-staged": "^6.1.0",
     "prettier": "^1.10.2",
     "react": "^16.2.0",
@@ -14,6 +15,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "precommit": "lint-staged",
     "prettier": "prettier '**/*.js'"
   },
@@ -22,5 +25,6 @@
       "prettier --write",
       "git add"
     ]
-  }
+  },
+  "homepage": "https://asa-taka.github.io/xxxx-SET-REPO-HERE-xxxx/"
 }
